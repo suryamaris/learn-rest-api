@@ -18,10 +18,10 @@ class Mahasiswa extends REST_Controller
         $id = $this->get('id');
 
         if($id === null) {
-            $mahasiswa = $this->Mahasiswa_model->getMahasiswa();
+            $mahasiswa = $this->mahasiswa->getMahasiswa();
         }
         else {
-            $mahasiswa = $this->Mahasiswa_model->getMahasiswa($id);
+            $mahasiswa = $this->mahasiswa->getMahasiswa($id);
             
         }
 
